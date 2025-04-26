@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ post.title }} - Sentiment Analysis Blog</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>{{ post.title }}</h1>
+        <p><small>Published on: {{ post.date }}</small></p>
+    </header>
+
+    <section class="post-content">
+        <p>{{ post.content }}</p>
+    </section>
+
+    <footer>
+        <a href="/">Back to Home</a>
+    </footer>
+</body>
+</html>
